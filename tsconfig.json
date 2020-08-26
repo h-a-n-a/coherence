@@ -3,12 +3,13 @@
     "target": "es5",
     "moduleResolution": "node",
     "esModuleInterop": true,
-    "sourceMap": false,
+    "sourceMap": true,
     "strict": true,
     "declaration": true,
     "allowSyntheticDefaultImports": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "outDir": "lib"
   },
   "exclude": ["node_modules", "**/__test__"],
-  "include": ["packages"]
+  "include": ["src"]
 }
