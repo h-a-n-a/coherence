@@ -8,7 +8,6 @@ function getPkgAliasForPath(absPath: string) {
 
   // use package.name if exists
   if (fs.existsSync(pkgPath)) {
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
     result[0] = require(pkgPath).name;
   }
 
@@ -41,14 +40,12 @@ export default (cwd: string) => {
       require.resolve("lerna/lib/PackageUtilities", { paths: [cwd] })
     ) {
       // reference: https://github.com/azz/lerna-get-packages/blob/master/index.js
-      // eslint-disable-next-line @typescript-eslint/no-var-requires
       const PackageUtilities = require(require.resolve(
         "lerna/lib/PackageUtilities",
         {
           paths: [cwd],
         }
       ));
-      // eslint-disable-next-line @typescript-eslint/no-var-requires
       const Repository = require(require.resolve("lerna/lib/Repository", {
         paths: [cwd],
       }));

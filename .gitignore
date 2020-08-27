@@ -5,11 +5,11 @@ node_modules
 npm-debug.log*
 yarn-error.log
 yarn.lock
+package-lock.json
 lerna-debug.log
 
 # production
 dist
-site
 lib
 
 # misc
@@ -25,11 +25,3 @@ coverage
 *.sln
 *.sw*
 
-# umi
-.umi
-.umi-production
-.umi-test
-.env.local
-
-# lerna
-lerna-debug.log

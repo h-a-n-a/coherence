@@ -1,8 +1,7 @@
 {
-  "name": "@byted-cg/coherence",
+  "name": "coherence",
   "version": "0.0.1",
-  "description": "Link lerna packages with one click",
-  "author": "wangshuyuan <wangshuyuan@bytedance.com>",
+  "description": "Cli for boosting lerna-package development",
   "bin": {
     "coherence": "lib/index.js"
   },
@@ -16,6 +15,12 @@
     "test": "jest",
     "test:coverage": "jest --coverage"
   },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^6.0.0",
+    "fs-extra": "^9.0.1",
+    "ora": "^5.0.0"
+  },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
@@ -28,7 +33,6 @@
     "eslint": "^7.7.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-prettier": "^3.1.2",
-    "fs-extra": "^9.0.1",
     "gh-pages": "^2.2.0",
     "husky": "^4.2.3",
     "jest": "^25.1.0",
@@ -65,14 +69,5 @@
     "extends": [
       "@commitlint/config-conventional"
     ]
-  },
-  "license": "MIT",
-  "homepage": "https://code.byted.org/cgfe/coherence",
-  "repository": {
-    "type": "git",
-    "url": "https://code.byted.org/cgfe/coherence.git"
-  },
-  "bugs": {
-    "url": "https://code.byted.org/cgfe/coherence/issues"
   }
 }
