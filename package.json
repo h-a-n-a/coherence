@@ -10,7 +10,6 @@
     "prettier": "prettier --write '**/*.{less,md,json}'",
     "lint": "eslint 'src/**/*.{ts,tsx}'",
     "lint:fix": "eslint --fix 'src/**/*.{ts,tsx}'",
-    "commit": "git-cz",
     "release": "npm run build && lerna publish",
     "test": "jest",
     "test:coverage": "jest --coverage"
